@@ -5,7 +5,9 @@ const LearnMap = () => {
     <div className="w-full ">
       {LEARN_DATA.map((item, index) => (
         <div key={index} className="pb-4">
-          <h2 className="">{item.head}</h2>
+          <h2 className="">
+          <span>{(index + 1).toString().padStart(2, '0')}</span>, {item.head}
+          </h2>
           <p className="text-zinc-400">{item.definition}</p>
 
           {item.points.filter((point) => point.trim() !== "").length > 0 && (
@@ -15,7 +17,9 @@ const LearnMap = () => {
                 {item.points
                   .filter((point) => point.trim() !== "")
                   .map((point, i) => (
-                    <li className="text-stone-300" key={i}>&#9956; {point}</li>
+                    <li className="text-stone-300" key={i}>
+                      &#9956; {point}
+                    </li>
                   ))}
               </ul>
             </>
