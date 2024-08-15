@@ -1,7 +1,8 @@
 const Header = () => {
   return (
-    <div>
-      <h1 className="py-5 font-mono">JavaScript</h1>
+    <div className="py-3">
+      <h1 className="py-2 font-mono">JavaScript</h1>
+      <hr className="py-1"/>
      {/*  <ul>
         <li>
           JavaScript is a scripting or programming language that allows you to

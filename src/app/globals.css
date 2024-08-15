@@ -16,7 +16,13 @@ h1 {
 h2 {
   font-size: 20px;
   line-height: 30px;
+  font-weight: 600;
 }
+li {
+  text-indent: 40px;
+  color: #F5FEFD;
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -31,6 +37,7 @@ h2 {
   h6 {
     color: #7fff00;
   }
+  
 }
 
 @media only screen and (max-width: 900px) {
@@ -41,6 +48,17 @@ h2 {
   h2{
     font-size: 18px;
     line-height: 24px;
+    font-weight: 500;
+
+  }
+  p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+  li {
+    font-size: 14px;
+    line-height: 20px;
+    color: #F5FEFD;
   }
   
 }
