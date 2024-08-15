@@ -8,12 +8,41 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+h1 {
+  font-size: 40px;
+  line-height: 60px;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
+  h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+  h6 {
+    color: #7fff00;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  h2{
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
 }
 
 body {
