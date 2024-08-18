@@ -1,12 +1,14 @@
 import { LEARN_DATA } from "../lib/constants";
 
 const LearnMap = () => {
+  
+
   return (
     <div className="w-full ">
       {LEARN_DATA.map((item, index) => (
         <div key={index} className="pb-4">
           <h2 className="">
-          <span>{(index + 1).toString().padStart(2, '0')}</span>, {item.head}
+            <span>{(index + 1).toString().padStart(2, "0")}</span>, {item.head}
           </h2>
           <p className="text-zinc-400">{item.definition}</p>
 
